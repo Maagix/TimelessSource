@@ -22,7 +22,7 @@ function ProductPage() {
   const [isAddedToCart, setIsAddedToCart] = useState(false);
   const product = items?.find((item) => Number(item.id) === Number(id));
 
-  // MOVE TO SUPABASE EVENTUAL
+
   const toggles = [
     {
       title: "Product details",
@@ -64,7 +64,6 @@ function ProductPage() {
   if (isLoading) return <Spinner />;
 
   return (
-    // GIVE A KEY TO THE DIV SO THE STATE RESETS
     <div className="w-full bg-white">
       <div className="mx-auto w-full bg-white md:grid md:grid-cols-[2fr_2fr] lg:w-[100%] xl:w-[80%] 2xl:w-[65%]">
         <div className="">
