@@ -207,5 +207,4 @@ function useStore() {
   return context;
 }
 
-// VREA FISIER SEPARAT PT FUNCTII SI COMPONENTA
 export { ShopProvider, useStore };
